@@ -1,0 +1,17 @@
+{
+  "name": "Blog",
+  "authors": [
+    "Spac3G0at <victor.s.marie@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
