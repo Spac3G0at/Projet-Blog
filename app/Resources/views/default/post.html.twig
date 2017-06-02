@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+	<div class="row ">
+		<div class="breadcrumbs col-md-12  text-center">
+			<div class="border">
+				<h6>SIMPLE GRIND</h6>
+			</div>
+			<div class="border">
+				<h6>SIMPLE</h6>
+			</div>
+			<div class="border">
+				<h6>SIMPLE GRIND</h6>
+			</div>
+			<div class="border">
+				<h6>SIMPLE GRIND</h6>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<h1 class="text-center">{{ article.title }}</h1>
+	</div>
+
+
+	<div class="row">
+		<hr>
+		<div class="col-md-12 text-center">
+			<div class="catego">
+				<h4> <i class="fa fa-user"> Li an Fen</i></h4>
+			</div>
+			<div class="catego">
+				<h4> <i class="fa fa-clock-o"> 29/05/2017</i></h4>
+			</div>
+			<div class="catego">
+				<h4>Voyage</h4>
+			</div>
+			<hr>
+		</div>
+
+	</div>
+
+
+
+	<div class="row">
+
+		{{ article.text | raw }}
+
+	</div>
+
+	<a href="#" class="fa fa-chevron-up fa-2x" aria-hidden="true" id="toTop"></a>
+{% endblock %}

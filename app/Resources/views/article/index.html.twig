@@ -8,7 +8,7 @@
             <tr>
                 <th>Id</th>
                 <th>Title</th>
-                <th>Text</th>
+                {# <th>Text</th> #}
                 <th>Label</th>
                 <th>Isdraft</th>
                 <th>Createdat</th>
@@ -20,7 +20,7 @@
             <tr>
                 <td><a href="{{ path('article_show', { 'id': article.id }) }}">{{ article.id }}</a></td>
                 <td>{{ article.title }}</td>
-                <td>{{ article.text }}</td>
+                {# <td>{{ article.text }}</td> #}
                 <td>{{ article.label }}</td>
                 <td>{% if article.isDraft %}Yes{% else %}No{% endif %}</td>
                 <td>{% if article.createdAt %}{{ article.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
