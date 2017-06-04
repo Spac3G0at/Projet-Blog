@@ -118,6 +118,7 @@
   'IvoryCKEditorBundle:Form:_ckeditor_javascript.html.php' => __DIR__.'/../../../vendor/egeloen/ckeditor-bundle/Resources/views/Form/_ckeditor_javascript.html.php',
   'IvoryCKEditorBundle:Form:ckeditor_widget.html.php' => __DIR__.'/../../../vendor/egeloen/ckeditor-bundle/Resources/views/Form/ckeditor_widget.html.php',
   'IvoryCKEditorBundle:Form:ckeditor_widget.html.twig' => __DIR__.'/../../../vendor/egeloen/ckeditor-bundle/Resources/views/Form/ckeditor_widget.html.twig',
+  'VichUploaderBundle:Form:fields.html.twig' => __DIR__.'/../../../vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig',
   'DebugBundle:Profiler:dump.html.twig' => __DIR__.'/../../../vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig',
   'WebProfilerBundle:Router:panel.html.twig' => __DIR__.'/../../../vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Router/panel.html.twig',
   'WebProfilerBundle:Collector:form.html.twig' => __DIR__.'/../../../vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/form.html.twig',

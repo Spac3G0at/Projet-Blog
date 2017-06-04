@@ -185,6 +185,11 @@ realizační tým.
     'form.new_password' => 'Nové heslo',
     'form.new_password_confirmation' => 'Potvrzení nového hesla',
   ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'Stáhnout',
+    'form.label.delete' => 'Smazat?',
+  ),
 ));
 
 $catalogueEn = new MessageCatalogue('en', array (
@@ -373,6 +378,11 @@ the Team.
     'form.password_confirmation' => 'Repeat password',
     'form.new_password' => 'New password',
     'form.new_password_confirmation' => 'Repeat new password',
+  ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'Download',
+    'form.label.delete' => 'Delete?',
   ),
 ));
 $catalogue->addFallbackCatalogue($catalogueEn);

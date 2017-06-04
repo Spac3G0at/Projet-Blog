@@ -181,6 +181,11 @@ ekipa.
     'form.new_password' => 'Novo geslo',
     'form.new_password_confirmation' => 'Preverjanje gesla',
   ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'Prenesi',
+    'form.label.delete' => 'Izbris?',
+  ),
 ));
 
 $catalogueEn = new MessageCatalogue('en', array (
@@ -369,6 +374,11 @@ the Team.
     'form.password_confirmation' => 'Repeat password',
     'form.new_password' => 'New password',
     'form.new_password_confirmation' => 'Repeat new password',
+  ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'Download',
+    'form.label.delete' => 'Delete?',
   ),
 ));
 $catalogue->addFallbackCatalogue($catalogueEn);

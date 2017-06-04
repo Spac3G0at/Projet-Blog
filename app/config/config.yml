@@ -85,3 +85,17 @@ ivory_ck_editor:
     configs:
         my_config:
             toolbar: full
+
+
+vich_uploader:
+    db_driver: orm
+    storage: file_system
+    twig: true
+    
+    mappings:
+        user_avatar:
+            uri_prefix:         /uploads/avatars
+            upload_destination: %kernel.root_dir%/../web/uploads/avatars
+            delete_on_remove: true
+            delete_on_update: true
+            inject_on_load: true

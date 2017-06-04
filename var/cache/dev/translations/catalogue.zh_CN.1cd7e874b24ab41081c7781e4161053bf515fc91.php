@@ -372,6 +372,11 @@ the Team.
     'form.new_password' => 'New password',
     'form.new_password_confirmation' => 'Repeat new password',
   ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'Download',
+    'form.label.delete' => 'Delete?',
+  ),
 ));
 $catalogueZh->addFallbackCatalogue($catalogueEn);
 

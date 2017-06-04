@@ -188,6 +188,11 @@ $catalogue = new MessageCatalogue('ar', array (
     'form.new_password' => 'كلمة المرور الجديدة',
     'form.new_password_confirmation' => 'تأكيد كلمة المرور',
   ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'تحميل',
+    'form.label.delete' => 'حذف ؟',
+  ),
 ));
 
 $catalogueEn = new MessageCatalogue('en', array (
@@ -376,6 +381,11 @@ the Team.
     'form.password_confirmation' => 'Repeat password',
     'form.new_password' => 'New password',
     'form.new_password_confirmation' => 'Repeat new password',
+  ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'Download',
+    'form.label.delete' => 'Delete?',
   ),
 ));
 $catalogue->addFallbackCatalogue($catalogueEn);

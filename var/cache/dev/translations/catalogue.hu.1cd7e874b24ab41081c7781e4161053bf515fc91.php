@@ -188,6 +188,11 @@ a Csapat.
     'form.new_password' => 'Új jelszó',
     'form.new_password_confirmation' => 'Új jelszó megerősítése',
   ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'Jelenlegi fájl letöltése',
+    'form.label.delete' => 'Korábban feltöltött fájl törlése?',
+  ),
 ));
 
 $catalogueEn = new MessageCatalogue('en', array (
@@ -376,6 +381,11 @@ the Team.
     'form.password_confirmation' => 'Repeat password',
     'form.new_password' => 'New password',
     'form.new_password_confirmation' => 'Repeat new password',
+  ),
+  'VichUploaderBundle' => 
+  array (
+    'download' => 'Download',
+    'form.label.delete' => 'Delete?',
   ),
 ));
 $catalogue->addFallbackCatalogue($catalogueEn);
