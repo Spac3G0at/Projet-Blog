@@ -1,13 +1,17 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-{% extends 'base.html.twig' %}
+	{% extends 'base.html.twig' %}
 
-{% block body %}
+	{% block body %}
 
-<div class="fos_user_user_show">
-    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
-    <a class="btn btn-primary" href="{{ path('fos_user_profile_edit') }}">Edit</a>
-</div>
+		<div class="fos_user_user_show">
+			<img class="img-responsive" style="width: 200px;" src="{% if user.avatar == "default.png" %}{{ asset("img/default.png") }}{% else %}{{ asset("uploads/avatars/") }}{{ user.avatar }}{% endif %}">
 
-{% endblock %}
+			<p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+			<p>First name : {{ user.firstName }}</p>
+			<p>Last name : {{ user.lastName }}</p>
+			<p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+			<a class="btn btn-primary" href="{{ path('fos_user_profile_edit') }}">Edit</a>
+		</div>
+
+	{% endblock %}

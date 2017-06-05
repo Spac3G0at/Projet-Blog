@@ -19,6 +19,7 @@
       <parameter key="FOSUserBundle">FOS\UserBundle\FOSUserBundle</parameter>
       <parameter key="IvoryCKEditorBundle">Ivory\CKEditorBundle\IvoryCKEditorBundle</parameter>
       <parameter key="VichUploaderBundle">Vich\UploaderBundle\VichUploaderBundle</parameter>
+      <parameter key="KnpPaginatorBundle">Knp\Bundle\PaginatorBundle\KnpPaginatorBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -80,6 +81,11 @@
         <parameter key="parent">null</parameter>
         <parameter key="path">/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/vich/uploader-bundle</parameter>
         <parameter key="namespace">Vich\UploaderBundle</parameter>
+      </parameter>
+      <parameter key="KnpPaginatorBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle</parameter>
+        <parameter key="namespace">Knp\Bundle\PaginatorBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
         <parameter key="parent">null</parameter>
@@ -421,6 +427,12 @@
       </parameter>
     </parameter>
     <parameter key="vich_uploader.file_injector.class">Vich\UploaderBundle\Injector\FileInjector</parameter>
+    <parameter key="knp_paginator.class">Knp\Component\Pager\Paginator</parameter>
+    <parameter key="knp_paginator.helper.processor.class">Knp\Bundle\PaginatorBundle\Helper\Processor</parameter>
+    <parameter key="knp_paginator.template.pagination">KnpPaginatorBundle:Pagination:sliding.html.twig</parameter>
+    <parameter key="knp_paginator.template.filtration">KnpPaginatorBundle:Pagination:filtration.html.twig</parameter>
+    <parameter key="knp_paginator.template.sortable">KnpPaginatorBundle:Pagination:sortable_link.html.twig</parameter>
+    <parameter key="knp_paginator.page_range">5</parameter>
     <parameter key="web_profiler.debug_toolbar.position">bottom</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
@@ -555,7 +567,7 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>sGTx7zZuzz</argument>
                 <argument>0</argument>
-                <argument>JXZOlmlh55flMl4O7ZOK+r</argument>
+                <argument>XUAQ-6nxELe+x4nNZkZR5e</argument>
                 <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/var/cache/dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -738,7 +750,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>p-lMZw9AIi</argument>
       <argument>0</argument>
-      <argument>JXZOlmlh55flMl4O7ZOK+r</argument>
+      <argument>XUAQ-6nxELe+x4nNZkZR5e</argument>
       <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -748,7 +760,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>eNh5tW9X6v</argument>
       <argument>0</argument>
-      <argument>JXZOlmlh55flMl4O7ZOK+r</argument>
+      <argument>XUAQ-6nxELe+x4nNZkZR5e</argument>
       <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -931,6 +943,7 @@
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.es.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.es.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.es.yml</argument>
+            <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/translations/KnpPaginatorBundle.es.xliff</argument>
           </argument>
           <argument key="mn" type="collection">
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.mn.xlf</argument>
@@ -945,6 +958,7 @@
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ro.xlf</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ro.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ro.yml</argument>
+            <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/translations/KnpPaginatorBundle.ro.xliff</argument>
           </argument>
           <argument key="da" type="collection">
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.da.xlf</argument>
@@ -989,6 +1003,7 @@
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fr.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fr.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.fr.yml</argument>
+            <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/translations/KnpPaginatorBundle.fr.xliff</argument>
           </argument>
           <argument key="no" type="collection">
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.no.xlf</argument>
@@ -1009,6 +1024,7 @@
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.en.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.en.yml</argument>
+            <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/translations/KnpPaginatorBundle.en.xliff</argument>
           </argument>
           <argument key="lt" type="collection">
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lt.xlf</argument>
@@ -1062,6 +1078,7 @@
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ru.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ru.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ru.yml</argument>
+            <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/translations/KnpPaginatorBundle.ru.xliff</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Latn.xlf</argument>
@@ -1077,6 +1094,7 @@
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pl.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pl.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pl.yml</argument>
+            <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/translations/KnpPaginatorBundle.pl.xliff</argument>
           </argument>
           <argument key="et" type="collection">
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.et.xlf</argument>
@@ -1110,6 +1128,7 @@
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.de.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.de.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.de.yml</argument>
+            <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/translations/KnpPaginatorBundle.de.xliff</argument>
           </argument>
           <argument key="nn" type="collection">
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nn.xlf</argument>
@@ -1141,6 +1160,7 @@
           <argument key="ky" type="collection">
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ky.yml</argument>
             <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ky.yml</argument>
+            <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/translations/KnpPaginatorBundle.ky.xliff</argument>
           </argument>
         </argument>
       </argument>
@@ -1842,6 +1862,14 @@
         </argument>
         <argument>0</argument>
       </call>
+      <call method="addListenerService">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument>knp_paginator.subscriber.sliding_pagination</argument>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
       <call method="addSubscriberService">
         <argument>response_listener</argument>
         <argument>Symfony\Component\HttpKernel\EventListener\ResponseListener</argument>
@@ -1953,6 +1981,46 @@
       <call method="addSubscriberService">
         <argument>web_profiler.debug_toolbar</argument>
         <argument>Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener</argument>
+      </call>
+      <call method="addListenerService">
+        <argument>knp_pager.before</argument>
+        <argument type="collection">
+          <argument>knp_paginator.subscriber.paginate</argument>
+          <argument>before</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListenerService">
+        <argument>knp_pager.pagination</argument>
+        <argument type="collection">
+          <argument>knp_paginator.subscriber.paginate</argument>
+          <argument>pagination</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListenerService">
+        <argument>knp_pager.before</argument>
+        <argument type="collection">
+          <argument>knp_paginator.subscriber.sortable</argument>
+          <argument>before</argument>
+        </argument>
+        <argument>1</argument>
+      </call>
+      <call method="addListenerService">
+        <argument>knp_pager.before</argument>
+        <argument type="collection">
+          <argument>knp_paginator.subscriber.filtration</argument>
+          <argument>before</argument>
+        </argument>
+        <argument>1</argument>
+      </call>
+      <call method="addListenerService">
+        <argument>knp_pager.pagination</argument>
+        <argument type="collection">
+          <argument>knp_paginator.subscriber.sliding_pagination</argument>
+          <argument>pagination</argument>
+        </argument>
+        <argument>1</argument>
       </call>
     </service>
     <service id="debug.controller_resolver" class="Symfony\Component\HttpKernel\Controller\TraceableControllerResolver">
@@ -2128,7 +2196,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>593449f5d154c3.46663260</argument>
+            <argument>593576333fc387.28198838</argument>
           </service>
         </argument>
       </argument>
@@ -2460,7 +2528,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>593449f5d154c3.46663260</argument>
+            <argument>593576333fc387.28198838</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2741,6 +2809,9 @@
             <argument type="service" id="vich_uploader.templating.helper.uploader_helper"/>
           </service>
         </argument>
+      </call>
+      <call method="addExtension">
+        <argument type="service" id="knp_paginator.twig.extension.pagination"/>
       </call>
       <call method="addExtension">
         <argument type="service">
@@ -3435,6 +3506,46 @@
       </argument>
       <argument type="service" id="debug.event_dispatcher"/>
     </service>
+    <service id="knp_paginator" class="Knp\Component\Pager\Paginator">
+      <argument type="service" id="debug.event_dispatcher"/>
+      <call method="setDefaultPaginatorOptions">
+        <argument type="collection">
+          <argument key="pageParameterName">page</argument>
+          <argument key="sortFieldParameterName">sort</argument>
+          <argument key="sortDirectionParameterName">direction</argument>
+          <argument key="filterFieldParameterName">filterField</argument>
+          <argument key="filterValueParameterName">filterValue</argument>
+          <argument key="distinct">true</argument>
+        </argument>
+      </call>
+    </service>
+    <service id="knp_paginator.subscriber.paginate" class="Knp\Component\Pager\Event\Subscriber\Paginate\PaginationSubscriber">
+      <tag name="knp_paginator.subscriber"/>
+    </service>
+    <service id="knp_paginator.subscriber.sortable" class="Knp\Component\Pager\Event\Subscriber\Sortable\SortableSubscriber">
+      <tag name="knp_paginator.subscriber"/>
+    </service>
+    <service id="knp_paginator.subscriber.filtration" class="Knp\Component\Pager\Event\Subscriber\Filtration\FiltrationSubscriber">
+      <tag name="knp_paginator.subscriber"/>
+    </service>
+    <service id="knp_paginator.subscriber.sliding_pagination" class="Knp\Bundle\PaginatorBundle\Subscriber\SlidingPaginationSubscriber">
+      <tag name="knp_paginator.subscriber"/>
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest"/>
+      <argument type="collection">
+        <argument key="defaultPaginationTemplate">KnpPaginatorBundle:Pagination:sliding.html.twig</argument>
+        <argument key="defaultSortableTemplate">KnpPaginatorBundle:Pagination:sortable_link.html.twig</argument>
+        <argument key="defaultFiltrationTemplate">KnpPaginatorBundle:Pagination:filtration.html.twig</argument>
+        <argument key="defaultPageRange">5</argument>
+      </argument>
+    </service>
+    <service id="knp_paginator.helper.processor" class="Knp\Bundle\PaginatorBundle\Helper\Processor">
+      <argument type="service" id="router"/>
+      <argument type="service" id="translator"/>
+    </service>
+    <service id="knp_paginator.twig.extension.pagination" class="Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension">
+      <tag name="twig.extension"/>
+      <argument type="service" id="knp_paginator.helper.processor"/>
+    </service>
     <service id="data_collector.dump" class="Symfony\Component\HttpKernel\DataCollector\DumpDataCollector">
       <tag name="data_collector" id="dump" template="@Debug/Profiler/dump.html.twig" priority="240"/>
       <argument type="service" id="debug.stopwatch" on-invalid="ignore"/>
@@ -3914,6 +4025,10 @@
       <call method="addPath">
         <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/vich/uploader-bundle/Resources/views</argument>
         <argument>VichUploader</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/knplabs/knp-paginator-bundle/Resources/views</argument>
+        <argument>KnpPaginator</argument>
       </call>
       <call method="addPath">
         <argument>/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>

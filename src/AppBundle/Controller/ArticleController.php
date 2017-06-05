@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use Knp\Bundle\PaginatorBundle\KnpPaginatorBundle;
 
 /**
  * Article controller.
@@ -21,15 +22,27 @@ class ArticleController extends Controller
      * @Route("/", name="article_index")
      * @Method("GET")
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $articles = $em->getRepository('AppBundle:Article')->findAll();
+        $dql   = "SELECT a FROM AppBundle:Article a";
+        $query = $em->createQuery($dql);
 
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            5/*limit per page*/
+            );
+
+
+
+        $articles = $em->getRepository('AppBundle:Article')->findAll();
         return $this->render('article/index.html.twig', array(
             'articles' => $articles,
-        ));
+            'pagination' => $pagination,
+            ));
     }
 
     /**
@@ -55,7 +68,7 @@ class ArticleController extends Controller
         return $this->render('article/new.html.twig', array(
             'article' => $article,
             'form' => $form->createView(),
-        ));
+            ));
     }
 
     /**
@@ -71,7 +84,7 @@ class ArticleController extends Controller
         return $this->render('article/show.html.twig', array(
             'article' => $article,
             'delete_form' => $deleteForm->createView(),
-        ));
+            ));
     }
 
     /**
@@ -96,7 +109,7 @@ class ArticleController extends Controller
             'article' => $article,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-        ));
+            ));
     }
 
     /**
@@ -129,9 +142,9 @@ class ArticleController extends Controller
     private function createDeleteForm(Article $article)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('article_delete', array('id' => $article->getId())))
-            ->setMethod('DELETE')
-            ->getForm()
+        ->setAction($this->generateUrl('article_delete', array('id' => $article->getId())))
+        ->setMethod('DELETE')
+        ->getForm()
         ;
     }
 }

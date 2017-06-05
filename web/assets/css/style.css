@@ -113,7 +113,7 @@ li {
     transition: 1s;
 }
 
-li:hover {
+nav li:hover {
     background-color: red;
     transition: 1s;
 }
