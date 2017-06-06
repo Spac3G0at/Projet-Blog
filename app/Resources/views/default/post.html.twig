@@ -4,7 +4,7 @@
 
 
 
-	<div class="row ">
+{# 	<div class="row ">
 		<div class="breadcrumbs col-md-12  text-center">
 			<div class="border">
 				<h6>SIMPLE GRIND</h6>
@@ -20,13 +20,20 @@
 			</div>
 		</div>
 	</div>
-	<br>
-	<div class="row">
+	<br> #}
+
+
+	<div class="row {% if article.image != NULL %} haveImage {% endif %}" style="background-image: url({{ asset("uploads/articles/") }}{{ article.image }});">
 		<h1 class="text-center">{{ article.title }}</h1>
+
+	</div>
+
+	<div class="row container">
+		<h4>Author, {{ article.createdAt | date('Y-m-d') }}, {{ article.createdAt | date('H:i:s') }}</h4>
 	</div>
 
 
-	<div class="row">
+{# 	<div class="row">
 		<hr>
 		<div class="col-md-12 text-center">
 			<div class="catego">
@@ -41,11 +48,11 @@
 			<hr>
 		</div>
 
-	</div>
+	</div> #}
 
 
 
-	<div class="row">
+	<div class="row article-content container">
 
 		{{ article.text | raw }}
 

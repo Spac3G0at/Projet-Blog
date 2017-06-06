@@ -100,6 +100,13 @@ vich_uploader:
             delete_on_update: true
             inject_on_load: true
 
+        article_image:
+            uri_prefix:         /uploads/articles
+            upload_destination: %kernel.root_dir%/../web/uploads/articles
+            delete_on_remove: true
+            delete_on_update: true
+            inject_on_load: true
+
 # Pagination
 
 knp_paginator:

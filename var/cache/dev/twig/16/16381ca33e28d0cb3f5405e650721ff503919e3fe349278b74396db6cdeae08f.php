@@ -21,29 +21,29 @@ class __TwigTemplate_eafdd9adb599ef576c94ed9db9b912f0f53974d173449bafe59dfa493c8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fadf81db51f3186232eb1ab30e40b2bc88524bf14ef2dd8a2d6d031633a1150c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_fadf81db51f3186232eb1ab30e40b2bc88524bf14ef2dd8a2d6d031633a1150c->enter($__internal_fadf81db51f3186232eb1ab30e40b2bc88524bf14ef2dd8a2d6d031633a1150c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "article/index.html.twig"));
+        $__internal_62d439097ec0ba77a29d3fe19803558211c62eb31d6b1a793b2a19f941ba4eb2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_62d439097ec0ba77a29d3fe19803558211c62eb31d6b1a793b2a19f941ba4eb2->enter($__internal_62d439097ec0ba77a29d3fe19803558211c62eb31d6b1a793b2a19f941ba4eb2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "article/index.html.twig"));
 
-        $__internal_da989aca68bba3ab09a383fcc585eb1a5bf81ff042ae7436beac4ecd554f5598 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_da989aca68bba3ab09a383fcc585eb1a5bf81ff042ae7436beac4ecd554f5598->enter($__internal_da989aca68bba3ab09a383fcc585eb1a5bf81ff042ae7436beac4ecd554f5598_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "article/index.html.twig"));
+        $__internal_24b20856eb202dfc7c34dcdb69dc2af151fbf007efb932ba165fb13e7e585324 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_24b20856eb202dfc7c34dcdb69dc2af151fbf007efb932ba165fb13e7e585324->enter($__internal_24b20856eb202dfc7c34dcdb69dc2af151fbf007efb932ba165fb13e7e585324_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "article/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_fadf81db51f3186232eb1ab30e40b2bc88524bf14ef2dd8a2d6d031633a1150c->leave($__internal_fadf81db51f3186232eb1ab30e40b2bc88524bf14ef2dd8a2d6d031633a1150c_prof);
+        $__internal_62d439097ec0ba77a29d3fe19803558211c62eb31d6b1a793b2a19f941ba4eb2->leave($__internal_62d439097ec0ba77a29d3fe19803558211c62eb31d6b1a793b2a19f941ba4eb2_prof);
 
         
-        $__internal_da989aca68bba3ab09a383fcc585eb1a5bf81ff042ae7436beac4ecd554f5598->leave($__internal_da989aca68bba3ab09a383fcc585eb1a5bf81ff042ae7436beac4ecd554f5598_prof);
+        $__internal_24b20856eb202dfc7c34dcdb69dc2af151fbf007efb932ba165fb13e7e585324->leave($__internal_24b20856eb202dfc7c34dcdb69dc2af151fbf007efb932ba165fb13e7e585324_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_6659f875182650c578c5cc9d6261847d5cd2c7cefda518f83684ae394146fc5f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6659f875182650c578c5cc9d6261847d5cd2c7cefda518f83684ae394146fc5f->enter($__internal_6659f875182650c578c5cc9d6261847d5cd2c7cefda518f83684ae394146fc5f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_bdcd9fdc7385cfef6f57ac2e67e0ee6efa60041a64f3d65cd996c286a0215335 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_bdcd9fdc7385cfef6f57ac2e67e0ee6efa60041a64f3d65cd996c286a0215335->enter($__internal_bdcd9fdc7385cfef6f57ac2e67e0ee6efa60041a64f3d65cd996c286a0215335_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_27a87f6b4c1cad1465771979f2ec3144d814159cb00f25d05fa48e2405ba1ce8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_27a87f6b4c1cad1465771979f2ec3144d814159cb00f25d05fa48e2405ba1ce8->enter($__internal_27a87f6b4c1cad1465771979f2ec3144d814159cb00f25d05fa48e2405ba1ce8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_089d17251a5381772547cdea8d72d4d1ac27f34d72488c01d359154a136f88bb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_089d17251a5381772547cdea8d72d4d1ac27f34d72488c01d359154a136f88bb->enter($__internal_089d17251a5381772547cdea8d72d4d1ac27f34d72488c01d359154a136f88bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -156,7 +156,7 @@ class __TwigTemplate_eafdd9adb599ef576c94ed9db9b912f0f53974d173449bafe59dfa493c8
         // line 33
         echo "    </table>
 
-    <div class=\"count\">
+    <div class=\"count text-right\">
         Nombre total d'articles : ";
         // line 36
         echo twig_escape_filter($this->env, $this->getAttribute(($context["pagination"] ?? $this->getContext($context, "pagination")), "getTotalItemCount", array()), "html", null, true);
@@ -195,10 +195,10 @@ class __TwigTemplate_eafdd9adb599ef576c94ed9db9b912f0f53974d173449bafe59dfa493c8
     
 ";
         
-        $__internal_27a87f6b4c1cad1465771979f2ec3144d814159cb00f25d05fa48e2405ba1ce8->leave($__internal_27a87f6b4c1cad1465771979f2ec3144d814159cb00f25d05fa48e2405ba1ce8_prof);
+        $__internal_089d17251a5381772547cdea8d72d4d1ac27f34d72488c01d359154a136f88bb->leave($__internal_089d17251a5381772547cdea8d72d4d1ac27f34d72488c01d359154a136f88bb_prof);
 
         
-        $__internal_6659f875182650c578c5cc9d6261847d5cd2c7cefda518f83684ae394146fc5f->leave($__internal_6659f875182650c578c5cc9d6261847d5cd2c7cefda518f83684ae394146fc5f_prof);
+        $__internal_bdcd9fdc7385cfef6f57ac2e67e0ee6efa60041a64f3d65cd996c286a0215335->leave($__internal_bdcd9fdc7385cfef6f57ac2e67e0ee6efa60041a64f3d65cd996c286a0215335_prof);
 
     }
 
@@ -261,7 +261,7 @@ class __TwigTemplate_eafdd9adb599ef576c94ed9db9b912f0f53974d173449bafe59dfa493c8
         {% endfor %}
     </table>
 
-    <div class=\"count\">
+    <div class=\"count text-right\">
         Nombre total d'articles : {{ pagination.getTotalItemCount }}
     </div>
 

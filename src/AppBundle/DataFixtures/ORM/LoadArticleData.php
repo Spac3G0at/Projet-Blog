@@ -113,5 +113,102 @@ class LoadArticleData implements FixtureInterface, ContainerAwareInterface
         $manager->flush();
 
 
+        //-------------------------------------
+
+        //-----------------------------------
+
+                $article7 = new Article();
+        $article7->setTitle('Mon septième article');
+        $article7->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        $article7->setLabel("Article");
+        $article7->setIsDraft("0");
+
+        $manager->persist($article7);
+        $manager->flush();
+
+        //--------------------------------
+
+        $article8 = new Article();
+        $article8->setTitle('Article 8');
+        $article8->setText("  <ul> <li>Lorem</li> <li>Ipsum</li> <li>Dolor</li> <li>Sit</li> <li>Amet</li> </ul>");
+        $article8->setLabel("Liste");
+        $article8->setIsDraft("0");
+
+        $manager->persist($article8);
+        $manager->flush();
+
+
+        //--------------------------------
+
+        $article9 = new Article();
+        $article9->setTitle('9 article');
+        $article9->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        $article9->setLabel("Article");
+        $article9->setIsDraft("0");
+
+        $manager->persist($article9);
+        $manager->flush();
+
+        //--------------------------------
+
+        $article10 = new Article();
+        $article10->setTitle('10 article');
+        $article10->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        $article10->setLabel("Article");
+        $article10->setIsDraft("0");
+
+        $manager->persist($article10);
+        $manager->flush();
+
+        //--------------------------------
+
+        $article11 = new Article();
+        $article11->setTitle('11 article');
+        $article11->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        $article11->setLabel("Article");
+        $article11->setIsDraft("0");
+
+        $manager->persist($article11);
+        $manager->flush();
+
+        //--------------------------------
+
+        $article12 = new Article();
+        $article12->setTitle('12 article');
+        $article12->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        $article12->setLabel("Article");
+        $article12->setIsDraft("0");
+
+        $manager->persist($article12);
+        $manager->flush();
+
+        //------------------------------- 
+
+
     }
 }

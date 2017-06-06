@@ -169,23 +169,29 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         // homepage
         if (rtrim($pathinfo, '/') === '') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_homepage;
+            }
+
             if (substr($pathinfo, -1) !== '/') {
                 return $this->redirect($pathinfo.'/', 'homepage');
             }
 
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
+        not_homepage:
 
-        // app_default_show
+        // post
         if (0 === strpos($pathinfo, '/post') && preg_match('#^/post/(?P<id>\\d+)(?:\\.(?P<_format>html|json))?$#s', $pathinfo, $matches)) {
             if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
                 $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not_app_default_show;
+                goto not_post;
             }
 
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_default_show')), array (  '_format' => 'html',  '_controller' => 'AppBundle\\Controller\\DefaultController::showAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'post')), array (  '_format' => 'html',  '_controller' => 'AppBundle\\Controller\\DefaultController::showAction',));
         }
-        not_app_default_show:
+        not_post:
 
         if (0 === strpos($pathinfo, '/log')) {
             if (0 === strpos($pathinfo, '/login')) {

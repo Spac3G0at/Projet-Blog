@@ -4,12 +4,15 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * Article
  *
  * @ORM\Table(name="article")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ArticleRepository")
+ * @vich\Uploadable
  */
 class Article
 {
@@ -60,6 +63,31 @@ class Article
      * @ORM\Column(name="created_at", type="datetime")
      */
     private $createdAt;
+
+    /**
+     * @Assert\Image(
+     *      maxSize="2M",
+     *      mimeTypes={"image/png", "image/jpeg", "image/pjpeg"}
+     * )
+     * @Vich\UploadableField(mapping="article_image", fileNameProperty="image")
+     *
+     * @var File $imageFile
+     */
+    protected $imageFile;
+
+    /**
+     * @var string
+     * 
+     * @ORM\Column(name="image", type="string", length=255, nullable=true)
+     */
+    protected $image;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     *
+     * @var \DateTime $updatedAt
+     */
+    protected $updatedAt;
 
 
 
@@ -198,5 +226,81 @@ class Article
     {
         return $this->createdAt;
     }
+
+
+
+
+
+
+
+
+
+    public function setImageFile($imageFile)
+    {
+        $this->imageFile = $imageFile;
+
+        if ($imageFile) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->setUpdatedAt(new \DateTime());
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return File
+     */
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+
+    /**
+     * @param string $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Gets the value of updatedAt.
+     *
+     * @return \DateTime $updatedAt
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Sets the value of updatedAt.
+     *
+     * @param \DateTime $updatedAt $updatedAt the updated at
+     *
+     * @return self
+     */
+    protected function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+
+
+
+
 }
 

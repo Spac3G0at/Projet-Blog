@@ -10,16 +10,36 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
+     * Lists all article entities.
+     *
      * @Route("/", name="homepage")
+     * @Method("GET")
      */
     public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+
+        $dql   = "SELECT a FROM AppBundle:Article a WHERE a.isDraft = 0 ORDER BY a.id desc";
+        $query = $em->createQuery($dql);
+
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            6/*limit per page*/
+            );
+
+
+
+        $articles = $em->getRepository('AppBundle:Article')->findAll();
+        return $this->render('default/index.html.twig', array(
+            'articles' => $articles,
+            'pagination' => $pagination,
+            ));
     }
 
 
-            /**
+         /**
          * @Route(
          *   "/post/{id}.{_format}",
          *    defaults={"_format": "html"},
@@ -27,7 +47,7 @@ class DefaultController extends Controller
          *      "_format": "html|json",
          *      "id": "\d+"
          *     }
-         * ) 
+         * , name="post") 
          * @Method("GET")
          */
         public function showAction(Request $request, int $id) {
