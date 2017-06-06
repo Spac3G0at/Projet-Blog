@@ -27,7 +27,7 @@ class DefaultController extends Controller
          *      "_format": "html|json",
          *      "id": "\d+"
          *     }
-         * ) 
+         * )
          * @Method("GET")
          */
         public function showAction(Request $request, int $id) {
@@ -51,5 +51,36 @@ class DefaultController extends Controller
                     }
             }
         }
+
+
+
+        /**
+   * @Route("/about", name="about")
+   */
+  public function aboutAction(Request $request)
+  {
+      // replace this example code with whatever you need
+      return $this->render('default/about.html.twig');
+  }
+
+
+
+  /**
+   * @Route("/post", name="post")
+   */
+  public function postAction(Request $request)
+  {
+      // replace this example code with whatever you need
+      return $this->render('default/post.html.twig');
+  }
+
+   /**
+   * @Route("/contact", name="contact")
+   */
+  public function contactAction(Request $request)
+  {
+      // replace this example code with whatever you need
+      return $this->render('default/contact.html.twig');
+  }
 
 }

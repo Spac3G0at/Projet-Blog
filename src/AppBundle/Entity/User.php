@@ -54,7 +54,7 @@ class User extends BaseUser
      * 
      * @ORM\Column(name="avatar", type="string", length=255, nullable=true)
      */
-    protected $avatar;
+    protected $avatar = "default.png";
 
     /**
      * @ORM\Column(type="datetime", nullable=true)

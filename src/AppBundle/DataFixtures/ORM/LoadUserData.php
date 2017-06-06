@@ -30,6 +30,7 @@ class LoadUserData implements FixtureInterface, ContainerAwareInterface
         $user->setLastName("admin");
         $user->setEnabled("1");
         $user->addRole('ROLE_ADMIN');
+        $user->setAvatar("default.png");
 
         // the 'security.password_encoder' service requires Symfony 2.6 or higher
         $encoder = $this->container->get('security.password_encoder');

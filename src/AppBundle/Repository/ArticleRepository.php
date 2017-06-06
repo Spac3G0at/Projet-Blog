@@ -1,6 +1,8 @@
 <?php
 
 namespace AppBundle\Repository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
+use AppBundle\Entity\Product;
 // use AppBundle\Entity\Article;
 
 /**
@@ -11,4 +13,21 @@ namespace AppBundle\Repository;
  */
 class ArticleRepository extends \Doctrine\ORM\EntityRepository
 {
+
+	public function getByPage($page = 1)
+    {
+        $query = $this->createQueryBuilder('article')
+            ->getQuery()
+            ->setFirstResult(($page-1) * Article::PER_PAGE)
+            ->setMaxResults(Article::PER_PAGE);
+
+        return new Paginator($query, $fetchJoinCollection = true);
+    }
+
+    public function nbPages() {
+        $nbPages = ceil(count($this->getByPage()) / Article::PER_PAGE);
+        return ($nbPages === 0) ? 1 : $nbPages;
+    }
+
+
 }

@@ -194,6 +194,11 @@ the Team.
     'download' => 'Download',
     'form.label.delete' => 'Delete?',
   ),
+  'KnpPaginatorBundle' => 
+  array (
+    'label_previous' => 'Previous',
+    'label_next' => 'Next',
+  ),
 ));
 
 

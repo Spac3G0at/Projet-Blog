@@ -30,7 +30,7 @@ class LoadArticleData implements FixtureInterface, ContainerAwareInterface
                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        $article1->setLabel("First");
+        $article1->setLabel("Article");
         $article1->setIsDraft("0");
 
         $manager->persist($article1);
@@ -39,14 +39,9 @@ class LoadArticleData implements FixtureInterface, ContainerAwareInterface
         //--------------------------------
 
         $article2 = new Article();
-        $article2->setTitle('Mon second article');
-        $article2->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        $article2->setLabel("Second");
+        $article2->setTitle('Article avec liste');
+        $article2->setText("  <ul> <li>Lorem</li> <li>Ipsum</li> <li>Dolor</li> <li>Sit</li> <li>Amet</li> </ul>");
+        $article2->setLabel("Liste");
         $article2->setIsDraft("0");
 
         $manager->persist($article2);
@@ -63,7 +58,7 @@ class LoadArticleData implements FixtureInterface, ContainerAwareInterface
                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        $article3->setLabel("Second");
+        $article3->setLabel("Article");
         $article3->setIsDraft("0");
 
         $manager->persist($article3);
@@ -79,7 +74,7 @@ class LoadArticleData implements FixtureInterface, ContainerAwareInterface
                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        $article4->setLabel("Second");
+        $article4->setLabel("Article");
         $article4->setIsDraft("0");
 
         $manager->persist($article4);
@@ -95,7 +90,7 @@ class LoadArticleData implements FixtureInterface, ContainerAwareInterface
                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        $article5->setLabel("Second");
+        $article5->setLabel("Article");
         $article5->setIsDraft("0");
 
         $manager->persist($article5);
@@ -111,7 +106,7 @@ class LoadArticleData implements FixtureInterface, ContainerAwareInterface
                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        $article6->setLabel("Second");
+        $article6->setLabel("Article");
         $article6->setIsDraft("0");
 
         $manager->persist($article6);
