@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row {% if article.image != NULL %} haveImage {% endif %}">
+    <h1 class="text-center">{{ article.title }}</h1>
+    {% if article.image != NULL %}
+    <img src="{{ asset('uploads/articles/') }}{{ article.image }}">
+    {% endif %}
+
+    </div>
+
+    <hr>
+
+    <div class="row container">
+        <h4 class="text-center">{# Author,  #}<span class="glyphicon glyphicon-time">{{ article.createdAt | date('Y-m-d') }}, {{ article.createdAt | date('H:i:s') }}</h4>
+    </div>
+
+    <hr>
+
+
+    <div class="row article-content container">
+
+        {{ article.text | raw }}
+
+    </div>
+
+
+    <ul class="list-unstyled">
+        <li>
+            <a class="" href="{{ path('article_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a class="btn btn-primary" href="{{ path('article_edit', { 'id': article.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input class="btn btn-danger" type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
