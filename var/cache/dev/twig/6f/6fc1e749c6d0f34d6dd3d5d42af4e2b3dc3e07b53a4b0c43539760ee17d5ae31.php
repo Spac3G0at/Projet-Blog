@@ -21,29 +21,29 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f->enter($__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_37bb26d3d5540fb82033c8bea955571565aff369cea4df8c478e3bf4004f43e0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_37bb26d3d5540fb82033c8bea955571565aff369cea4df8c478e3bf4004f43e0->enter($__internal_37bb26d3d5540fb82033c8bea955571565aff369cea4df8c478e3bf4004f43e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
-        $__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290->enter($__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_00365a6799aff0e75b0d7a0bd7c70beca3da015a194e32dd5f2823bfe066f259 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_00365a6799aff0e75b0d7a0bd7c70beca3da015a194e32dd5f2823bfe066f259->enter($__internal_00365a6799aff0e75b0d7a0bd7c70beca3da015a194e32dd5f2823bfe066f259_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f->leave($__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f_prof);
+        $__internal_37bb26d3d5540fb82033c8bea955571565aff369cea4df8c478e3bf4004f43e0->leave($__internal_37bb26d3d5540fb82033c8bea955571565aff369cea4df8c478e3bf4004f43e0_prof);
 
         
-        $__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290->leave($__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290_prof);
+        $__internal_00365a6799aff0e75b0d7a0bd7c70beca3da015a194e32dd5f2823bfe066f259->leave($__internal_00365a6799aff0e75b0d7a0bd7c70beca3da015a194e32dd5f2823bfe066f259_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160->enter($__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c057be87addb6cc837fc8b607ec427cbd470a9d476f394dc08c70e1e8221b316 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c057be87addb6cc837fc8b607ec427cbd470a9d476f394dc08c70e1e8221b316->enter($__internal_c057be87addb6cc837fc8b607ec427cbd470a9d476f394dc08c70e1e8221b316_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217->enter($__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_23a460c162eaa3144dff89c93cdeddf1d40fb1b8308a031452dc873ac6a3b450 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_23a460c162eaa3144dff89c93cdeddf1d40fb1b8308a031452dc873ac6a3b450->enter($__internal_23a460c162eaa3144dff89c93cdeddf1d40fb1b8308a031452dc873ac6a3b450_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -52,22 +52,24 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
   <!-- ---------------- -->
 
+    <!-- ---------------- -->
+
   <div class=\"row MainTitle\">
-   <h2>Mon Carnet de Voyage</h2>
+    <h2 class=\"TitleTop letters\"  data-letters=\"Carnet de voyage\">Carnet de voyage</h2>
    <h4>histoire d'un globe trotter</h4>
  </div>
 
- <hr>
 
- <div class=\"row text-center\">
-  <p>Bienvenue sur mon blog à l’international!</p>
+<hr>
 
-  <p>Vous êtes curieux, vous aimez voyager ? Ce blog est fait pour vous ! Je vous fais voyager sans que vous ayez besoin de quitter votre salon, et si l’envie vous prend d’aller à l’étranger, je vous invite à consulter les villes que j’ai déjà visitées afin de passer un séjour optimal.</p>
-  <p>Ne perdez plus de temps à vous demander si tel restaurant vaut mieux qu’un autre. Évitez les déceptions ! Votre fidèle serviteur à testé pour vous les restaurants, sites touristiques, hôtels, ....</p>
-
-
-  <p>L’inscription est gratuite alors n’hésitez pas.</p>
+<div class=\"container-fluid Presentation text-center\">
+   <h3>Bienvenue sur mon blog international</h3>
+   <p class=\"PresentationLine\">Vous êtes curieux, vous aimez voyager ? Ce blog est fait pour vous ! Je vous fais voyager sans que vous ayez besoin de quitter votre salon, et si l’envie vous prend d’aller à l’étranger, je vous invite à consulter les villes que j’ai déjà visitées afin de passer un séjour optimal.</p>
+   <p class=\"PresentationLine\">Ne perdez plus de temps à vous demander si tel restaurant vaut mieux qu’un autre. Évitez les déceptions ! Votre fidèle serviteur à testé pour vous les restaurants, sites touristiques, hôtels, ....</p>
+   <p>L’inscription est gratuite alors n’hésitez pas.</p>
 </div>
+
+<hr>
 
 
 
@@ -76,7 +78,7 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
 
 ";
-        // line 41
+        // line 43
         echo "
 <!-- ############# -->
 
@@ -84,43 +86,43 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 <div class=\"row Articles\">
 
   ";
-        // line 47
+        // line 49
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["pagination"] ?? $this->getContext($context, "pagination")));
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
-            // line 48
+            // line 50
             echo "
 
   <div class=\"col-xs-12 col-md-4 col-sm-6 article-card\">
     <h3 class=\"text-center\"><a href=\"";
-            // line 51
+            // line 53
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("post", array("id" => $this->getAttribute($context["article"], "id", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "title", array()), "html", null, true);
             echo "</a></h3>
     <span class=\"glyphicon glyphicon-user\">Author</span><br>
     <span class=\"glyphicon glyphicon-time\">";
-            // line 53
+            // line 55
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["article"], "createdAt", array()), "Y-m-d"), "html", null, true);
             echo ", ";
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["article"], "createdAt", array()), "H:i:s"), "html", null, true);
             echo "</span>
 
     ";
-            // line 55
+            // line 57
             if (($this->getAttribute($context["article"], "image", array()) != null)) {
-                // line 56
+                // line 58
                 echo "    <img src=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("uploads/articles/"), "html", null, true);
                 echo twig_escape_filter($this->env, $this->getAttribute($context["article"], "image", array()), "html", null, true);
                 echo "\" class=\"img-responsive center-block\">
     ";
             }
-            // line 58
+            // line 60
             echo "
   
     ";
-            // line 60
+            // line 62
             echo $this->getAttribute($context["article"], "text", array());
             echo "
 
@@ -131,7 +133,7 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 65
+        // line 67
         echo "
 </div>
 
@@ -139,7 +141,7 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
 <div class=\"navigation text-center\">
   ";
-        // line 71
+        // line 73
         echo $this->env->getExtension('Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension')->render($this->env, ($context["pagination"] ?? $this->getContext($context, "pagination")));
         echo "
 </div>
@@ -149,10 +151,10 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
 ";
         
-        $__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217->leave($__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217_prof);
+        $__internal_23a460c162eaa3144dff89c93cdeddf1d40fb1b8308a031452dc873ac6a3b450->leave($__internal_23a460c162eaa3144dff89c93cdeddf1d40fb1b8308a031452dc873ac6a3b450_prof);
 
         
-        $__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160->leave($__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160_prof);
+        $__internal_c057be87addb6cc837fc8b607ec427cbd470a9d476f394dc08c70e1e8221b316->leave($__internal_c057be87addb6cc837fc8b607ec427cbd470a9d476f394dc08c70e1e8221b316_prof);
 
     }
 
@@ -168,7 +170,7 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
     public function getDebugInfo()
     {
-        return array (  143 => 71,  135 => 65,  124 => 60,  120 => 58,  113 => 56,  111 => 55,  104 => 53,  97 => 51,  92 => 48,  88 => 47,  80 => 41,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  145 => 73,  137 => 67,  126 => 62,  122 => 60,  115 => 58,  113 => 57,  106 => 55,  99 => 53,  94 => 50,  90 => 49,  82 => 43,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -190,22 +192,24 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
   <!-- ---------------- -->
 
+    <!-- ---------------- -->
+
   <div class=\"row MainTitle\">
-   <h2>Mon Carnet de Voyage</h2>
+    <h2 class=\"TitleTop letters\"  data-letters=\"Carnet de voyage\">Carnet de voyage</h2>
    <h4>histoire d'un globe trotter</h4>
  </div>
 
- <hr>
 
- <div class=\"row text-center\">
-  <p>Bienvenue sur mon blog à l’international!</p>
+<hr>
 
-  <p>Vous êtes curieux, vous aimez voyager ? Ce blog est fait pour vous ! Je vous fais voyager sans que vous ayez besoin de quitter votre salon, et si l’envie vous prend d’aller à l’étranger, je vous invite à consulter les villes que j’ai déjà visitées afin de passer un séjour optimal.</p>
-  <p>Ne perdez plus de temps à vous demander si tel restaurant vaut mieux qu’un autre. Évitez les déceptions ! Votre fidèle serviteur à testé pour vous les restaurants, sites touristiques, hôtels, ....</p>
-
-
-  <p>L’inscription est gratuite alors n’hésitez pas.</p>
+<div class=\"container-fluid Presentation text-center\">
+   <h3>Bienvenue sur mon blog international</h3>
+   <p class=\"PresentationLine\">Vous êtes curieux, vous aimez voyager ? Ce blog est fait pour vous ! Je vous fais voyager sans que vous ayez besoin de quitter votre salon, et si l’envie vous prend d’aller à l’étranger, je vous invite à consulter les villes que j’ai déjà visitées afin de passer un séjour optimal.</p>
+   <p class=\"PresentationLine\">Ne perdez plus de temps à vous demander si tel restaurant vaut mieux qu’un autre. Évitez les déceptions ! Votre fidèle serviteur à testé pour vous les restaurants, sites touristiques, hôtels, ....</p>
+   <p>L’inscription est gratuite alors n’hésitez pas.</p>
 </div>
+
+<hr>
 
 
 

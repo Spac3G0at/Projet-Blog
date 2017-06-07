@@ -50,7 +50,7 @@ class DefaultController extends Controller
          * , name="post") 
          * @Method("GET")
          */
-        public function showAction(Request $request, int $id) {
+         public function showAction(Request $request, int $id) {
             $article = $this->getDoctrine()
                 ->getRepository('AppBundle:Article') // on récupère le Repository Product
                 ->find($id); // on récupère le Produit ayant l'ID passé dans la route
@@ -61,7 +61,25 @@ class DefaultController extends Controller
                     else { // sinon si un Produit n'a pas été trouvé
                         throw $this->createNotFoundException('No article found for id '.$id); // on lève une erreur 404
                     }
-            }
-        
+                }
+
+            /**
+            * @Route("/about", name="about")
+            */
+             public function aboutAction(Request $request)
+             {
+              return $this->render('default/about.html.twig');
+             }
+
+
+            /**
+            * @Route("/contact", name="contact")
+            */
+            public function contactAction(Request $request)
+            {
+               // replace this example code with whatever you need
+               return $this->render('default/contact.html.twig');
+            }         
+
 
 }
