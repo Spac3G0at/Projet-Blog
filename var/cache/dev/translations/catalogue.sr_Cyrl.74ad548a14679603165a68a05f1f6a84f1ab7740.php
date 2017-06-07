@@ -249,6 +249,7 @@ $catalogueFr = new MessageCatalogue('fr', array (
     'profile.show.edit' => 'Modifier',
     'profile.edit.submit' => 'Mettre à jour',
     'profile.edit.changePassword' => 'Changer de mot de passe',
+    'profile.edit.editProfile' => 'Modifier le profil',
     'profile.flash.updated' => 'Le profil a été mis à jour.',
     'change_password.submit' => 'Modifier le mot de passe',
     'change_password.flash.success' => 'Le mot de passe a été modifié.',
@@ -296,6 +297,9 @@ L\'équipe
     'form.password_confirmation' => 'Répéter le mot de passe',
     'form.new_password' => 'Nouveau mot de passe',
     'form.new_password_confirmation' => 'Répéter le nouveau mot de passe',
+    'form.avatar' => 'Avatar',
+    'form.Firstname' => 'Prénom',
+    'form.Lastname' => 'Nom',
   ),
   'VichUploaderBundle' => 
   array (
@@ -306,11 +310,6 @@ L\'équipe
   array (
     'label_previous' => 'Précédent',
     'label_next' => 'Suivant',
-  ),
-  'profile' => 
-  array (
-    'Firstname' => 'Prénom',
-    'Last Name' => 'Nom',
   ),
 ));
 $catalogueSr->addFallbackCatalogue($catalogueFr);

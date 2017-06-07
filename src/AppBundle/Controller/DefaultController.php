@@ -6,6 +6,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use FOS\UserBundle\Entity\UserManager;
 
 class DefaultController extends Controller
 {
@@ -38,6 +39,37 @@ class DefaultController extends Controller
             ));
     }
 
+    /**
+     * Lists all article entities.
+     *
+     * @Route("/tri/asc", name="asc")
+     * @Method("GET")
+     */
+    public function ascAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $dql   = "SELECT a FROM AppBundle:Article a WHERE a.isDraft = 0 ORDER BY a.id asc";
+        $query = $em->createQuery($dql);
+
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            6/*limit per page*/
+            );
+
+
+
+        $articles = $em->getRepository('AppBundle:Article')->findAll();
+        return $this->render('default/index.html.twig', array(
+            'articles' => $articles,
+            'pagination' => $pagination,
+            ));
+    }
+
+
+
 
          /**
          * @Route(
@@ -68,6 +100,8 @@ class DefaultController extends Controller
             */
              public function aboutAction(Request $request)
              {
+              
+
               return $this->render('default/about.html.twig');
              }
 

@@ -204,6 +204,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not_homepage:
 
+        // asc
+        if ($pathinfo === '/tri/asc') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_asc;
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::ascAction',  '_route' => 'asc',);
+        }
+        not_asc:
+
         // post
         if (0 === strpos($pathinfo, '/post') && preg_match('#^/post/(?P<id>\\d+)(?:\\.(?P<_format>html|json))?$#s', $pathinfo, $matches)) {
             if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {

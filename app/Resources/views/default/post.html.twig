@@ -4,14 +4,21 @@
 
 	{% if article.isDraft != 1 %}
 
-	<div class="row {% if article.image != NULL %} haveImage {% endif %}" style="background-image: url({{ asset("uploads/articles/") }}{{ article.image }});">
-		<h1 class="text-center">{{ article.title }}</h1>
+	<div class="row {% if article.image != NULL %} haveImage {% endif %}">
+	<h1 class="text-center">{{ article.title }}</h1>
+	{% if article.image != NULL %}
+	<img src="{{ asset('uploads/articles/') }}{{ article.image }}">
+	{% endif %}
 
 	</div>
+
+	<hr>
 
 	<div class="row container">
-		<h4>Author, {{ article.createdAt | date('Y-m-d') }}, {{ article.createdAt | date('H:i:s') }}</h4>
+		<h4 class="text-center">{# Author,  #}<span class="glyphicon glyphicon-time">{{ article.createdAt | date('Y-m-d') }}, {{ article.createdAt | date('H:i:s') }}</h4>
 	</div>
+
+	<hr>
 
 
 	<div class="row article-content container">

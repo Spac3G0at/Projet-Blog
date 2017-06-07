@@ -1,43 +1,29 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+<div class="row {% if article.image != NULL %} haveImage {% endif %}">
     <h1 class="text-center">{{ article.title }}</h1>
+    {% if article.image != NULL %}
+    <img src="{{ asset('uploads/articles/') }}{{ article.image }}">
+    {% endif %}
 
-    {# <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ article.id }}</td>
-            </tr>
-            <tr>
-                <th>Title</th>
-                <td>{{ article.title }}</td>
-            </tr>
-            <tr>
-                <th>Text</th>
-                <td>{{ article.text }}</td>
-            </tr>
-            <tr>
-                <th>Label</th>
-                <td>{{ article.label }}</td>
-            </tr>
-            <tr>
-                <th>Isdraft</th>
-                <td>{% if article.isDraft %}Yes{% else %}No{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Createdat</th>
-                <td>{% if article.createdAt %}{{ article.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-            </tr>
-        </tbody>
-    </table>
- #}
+    </div>
 
-    <div class="row">
+    <hr>
+
+    <div class="row container">
+        <h4 class="text-center">{# Author,  #}<span class="glyphicon glyphicon-time">{{ article.createdAt | date('Y-m-d') }}, {{ article.createdAt | date('H:i:s') }}</h4>
+    </div>
+
+    <hr>
+
+
+    <div class="row article-content container">
 
         {{ article.text | raw }}
 
     </div>
+
 
     <ul class="list-unstyled">
         <li>
