@@ -19,8 +19,13 @@ profile:
     show:
         username: 'Nom d''utilisateur'
         email: 'Adresse e-mail'
+        Firstname: 'Prénom'
+        Lastname: 'Nom'
+        edit: 'Modifier'
     edit:
         submit: 'Mettre à jour'
+        changePassword: 'Changer de mot de passe'
+        editProfile: 'Modifier le profil'
     flash:
         updated: 'Le profil a été mis à jour.'
 change_password:
@@ -84,3 +89,6 @@ form:
     password_confirmation: 'Répéter le mot de passe'
     new_password: 'Nouveau mot de passe'
     new_password_confirmation: 'Répéter le nouveau mot de passe'
+    avatar: 'Avatar'
+    Firstname: 'Prénom'
+    Lastname: 'Nom'

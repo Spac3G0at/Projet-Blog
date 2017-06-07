@@ -121,6 +121,28 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_article_index:
 
+            // article_draft
+            if ($pathinfo === '/article/draft') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_article_draft;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\ArticleController::draftAction',  '_route' => 'article_draft',);
+            }
+            not_article_draft:
+
+            // article_published
+            if ($pathinfo === '/article/published') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_article_published;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\ArticleController::publishedAction',  '_route' => 'article_published',);
+            }
+            not_article_published:
+
             // article_new
             if ($pathinfo === '/article/new') {
                 if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {

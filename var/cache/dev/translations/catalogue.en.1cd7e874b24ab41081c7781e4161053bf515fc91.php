@@ -139,7 +139,11 @@ $catalogue = new MessageCatalogue('en', array (
     'security.login.submit' => 'Log in',
     'profile.show.username' => 'Username',
     'profile.show.email' => 'Email',
+    'profile.show.Firstname' => 'First name',
+    'profile.show.Lastname' => 'Last name',
+    'profile.show.edit' => 'Edit',
     'profile.edit.submit' => 'Update',
+    'profile.edit.changePassword' => 'Change password',
     'profile.flash.updated' => 'The profile has been updated.',
     'change_password.submit' => 'Change password',
     'change_password.flash.success' => 'The password has been changed.',
@@ -188,6 +192,9 @@ the Team.
     'form.password_confirmation' => 'Repeat password',
     'form.new_password' => 'New password',
     'form.new_password_confirmation' => 'Repeat new password',
+    'form.avatar' => 'Avatar',
+    'form.Firstname' => 'First name',
+    'form.Lastname' => 'Last name',
   ),
   'VichUploaderBundle' => 
   array (

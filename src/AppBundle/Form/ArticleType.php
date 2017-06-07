@@ -18,7 +18,7 @@ class ArticleType extends AbstractType
             CKEditorType::class, array(
                 'config' => array(
                     'uiColor' => '#ffffff'))
-                    )->add('label')->add('isDraft')->add('imageFile');
+                    )->add('isDraft')->add('imageFile');
             }
         
 

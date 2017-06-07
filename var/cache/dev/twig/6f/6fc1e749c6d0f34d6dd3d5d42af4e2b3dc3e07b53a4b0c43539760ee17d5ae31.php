@@ -21,29 +21,29 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cae535222bd7612d840f0eb63b0d0d67b955bef7c2d198106a03d7a3f859936d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_cae535222bd7612d840f0eb63b0d0d67b955bef7c2d198106a03d7a3f859936d->enter($__internal_cae535222bd7612d840f0eb63b0d0d67b955bef7c2d198106a03d7a3f859936d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f->enter($__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
-        $__internal_9f1e7872e6c28eef73ca575930c8e14f04162439553464f72833e32374e5d509 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9f1e7872e6c28eef73ca575930c8e14f04162439553464f72833e32374e5d509->enter($__internal_9f1e7872e6c28eef73ca575930c8e14f04162439553464f72833e32374e5d509_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290->enter($__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_cae535222bd7612d840f0eb63b0d0d67b955bef7c2d198106a03d7a3f859936d->leave($__internal_cae535222bd7612d840f0eb63b0d0d67b955bef7c2d198106a03d7a3f859936d_prof);
+        $__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f->leave($__internal_faafb489bd0f0e4624ff2dfa7b760fe51ac5c1dfdf19a79cdb04db158733ef6f_prof);
 
         
-        $__internal_9f1e7872e6c28eef73ca575930c8e14f04162439553464f72833e32374e5d509->leave($__internal_9f1e7872e6c28eef73ca575930c8e14f04162439553464f72833e32374e5d509_prof);
+        $__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290->leave($__internal_4df1df0a87bbb7b28f2c2081e44e16f24781d0db7f6212ce2cee031dd8fc3290_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d23daef21e4ba95296231b0799e6b04f8d8b42fe81af52b4445802b0ec076dd5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d23daef21e4ba95296231b0799e6b04f8d8b42fe81af52b4445802b0ec076dd5->enter($__internal_d23daef21e4ba95296231b0799e6b04f8d8b42fe81af52b4445802b0ec076dd5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160->enter($__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_bee817c48a8e7ff4f487bfe9507a46fed6399cd1af93ec59fd0e2ee6c1cede48 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_bee817c48a8e7ff4f487bfe9507a46fed6399cd1af93ec59fd0e2ee6c1cede48->enter($__internal_bee817c48a8e7ff4f487bfe9507a46fed6399cd1af93ec59fd0e2ee6c1cede48_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217->enter($__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -118,25 +118,12 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
             }
             // line 58
             echo "
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+  
+    ";
+            // line 60
+            echo $this->getAttribute($context["article"], "text", array());
+            echo "
+
   </div>
 
 ";
@@ -144,7 +131,7 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 81
+        // line 65
         echo "
 </div>
 
@@ -152,7 +139,7 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
 <div class=\"navigation text-center\">
   ";
-        // line 87
+        // line 71
         echo $this->env->getExtension('Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension')->render($this->env, ($context["pagination"] ?? $this->getContext($context, "pagination")));
         echo "
 </div>
@@ -162,10 +149,10 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
 ";
         
-        $__internal_bee817c48a8e7ff4f487bfe9507a46fed6399cd1af93ec59fd0e2ee6c1cede48->leave($__internal_bee817c48a8e7ff4f487bfe9507a46fed6399cd1af93ec59fd0e2ee6c1cede48_prof);
+        $__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217->leave($__internal_94d302c2f028030c1f5fbdc86eb76eb3ee853fec5006c4bbcaa4fed6af881217_prof);
 
         
-        $__internal_d23daef21e4ba95296231b0799e6b04f8d8b42fe81af52b4445802b0ec076dd5->leave($__internal_d23daef21e4ba95296231b0799e6b04f8d8b42fe81af52b4445802b0ec076dd5_prof);
+        $__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160->leave($__internal_772dd97a184f48f25e07dc3527389766fb5f3e677cd0e3758ae4ca80c69bf160_prof);
 
     }
 
@@ -181,7 +168,7 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
 
     public function getDebugInfo()
     {
-        return array (  156 => 87,  148 => 81,  120 => 58,  113 => 56,  111 => 55,  104 => 53,  97 => 51,  92 => 48,  88 => 47,  80 => 41,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  143 => 71,  135 => 65,  124 => 60,  120 => 58,  113 => 56,  111 => 55,  104 => 53,  97 => 51,  92 => 48,  88 => 47,  80 => 41,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -252,25 +239,9 @@ class __TwigTemplate_abb03cc78cf03a5a2ef7d869e1245be1069e7dbe66fc99b3f9bcb4d2c16
     <img src=\"{{ asset('uploads/articles/') }}{{ article.image }}\" class=\"img-responsive center-block\">
     {% endif %}
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+  
+    {{ article.text | raw }}
+
   </div>
 
 {% endfor %}

@@ -100,10 +100,8 @@ class ProfileFormType extends AbstractType
         $builder
             ->add('username', null, array('label' => 'form.username', 'translation_domain' => 'FOSUserBundle'))
             ->add('email', LegacyFormHelper::getType('Symfony\Component\Form\Extension\Core\Type\EmailType'), array('label' => 'form.email', 'translation_domain' => 'FOSUserBundle'))
-
-        ;
-        $builder->add('avatarFile');
-        $builder->add('firstName');
-        $builder->add('lastName');
+            ->add('avatarFile', LegacyFormHelper::getType('Symfony\Component\Form\Extension\Core\Type\FileType'), array('label' => 'form.avatar', 'translation_domain' => 'FOSUserBundle'))
+            ->add('firstName', null, array('label' => 'form.Fistname', 'translation_domain' => 'AppBundle'))
+            ->add('lastName', null, array('label' => 'form.Lastname', 'translation_domain' => 'AppBundle'));
     }
 }

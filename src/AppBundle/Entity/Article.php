@@ -43,14 +43,6 @@ class Article
     private $text;
 
     /**
-     * @var string
-     * 
-     * @ORM\Column(name="label", type="string", length=255)
-     * @Assert\NotBlank()
-     */
-    private $label;
-
-    /**
      * @var bool
      *
      * @ORM\Column(name="isDraft", type="boolean")
@@ -153,30 +145,6 @@ class Article
     public function getText()
     {
         return $this->text;
-    }
-
-    /**
-     * Set label
-     *
-     * @param string $label
-     *
-     * @return Article
-     */
-    public function setLabel($label)
-    {
-        $this->label = $label;
-
-        return $this;
-    }
-
-    /**
-     * Get label
-     *
-     * @return string
-     */
-    public function getLabel()
-    {
-        return $this->label;
     }
 
     /**

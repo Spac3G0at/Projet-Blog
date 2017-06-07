@@ -15,11 +15,11 @@ class __TwigTemplate_60692ec4575ad9fb89ed542ad26a19b657c90675490ca3adbca05862250
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_79bfce8bf705457353e03c16fd4d2d8da764f98f75b4ac183d966a7b8ae90118 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_79bfce8bf705457353e03c16fd4d2d8da764f98f75b4ac183d966a7b8ae90118->enter($__internal_79bfce8bf705457353e03c16fd4d2d8da764f98f75b4ac183d966a7b8ae90118_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.html.twig"));
+        $__internal_d0291d067bdf68fe2ed40913512059fd34fcae45112b546248be7602e01fdd26 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d0291d067bdf68fe2ed40913512059fd34fcae45112b546248be7602e01fdd26->enter($__internal_d0291d067bdf68fe2ed40913512059fd34fcae45112b546248be7602e01fdd26_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.html.twig"));
 
-        $__internal_212d0e1b576068d33a71c1c7a0b11cb730576caa2ba9923741fb5b8a694b85ba = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_212d0e1b576068d33a71c1c7a0b11cb730576caa2ba9923741fb5b8a694b85ba->enter($__internal_212d0e1b576068d33a71c1c7a0b11cb730576caa2ba9923741fb5b8a694b85ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.html.twig"));
+        $__internal_5012f76c86499facc4e9e45dfec95873f116f324e66f92e0f096735b5ef343d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5012f76c86499facc4e9e45dfec95873f116f324e66f92e0f096735b5ef343d8->enter($__internal_5012f76c86499facc4e9e45dfec95873f116f324e66f92e0f096735b5ef343d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.html.twig"));
 
         // line 1
         echo "<!-- START of Symfony Web Debug Toolbar -->
@@ -69,7 +69,7 @@ class __TwigTemplate_60692ec4575ad9fb89ed542ad26a19b657c90675490ca3adbca05862250
             if (            $this->loadTemplate($context["template"], "@WebProfiler/Profiler/toolbar.html.twig", 11)->hasBlock("toolbar", $context)) {
                 // line 12
                 echo "            ";
-                $__internal_4f38534000ef0359f8ab7caf55a5f24614f038e085a212557e3fe9c87bd28186 = array("collector" => $this->getAttribute(                // line 13
+                $__internal_c0947db7eeca557216a347b9625567be324f369431d2d47037b3f8c2d806047d = array("collector" => $this->getAttribute(                // line 13
 ($context["profile"] ?? $this->getContext($context, "profile")), "getcollector", array(0 => $context["name"]), "method"), "profiler_url" =>                 // line 14
 ($context["profiler_url"] ?? $this->getContext($context, "profiler_url")), "token" => $this->getAttribute(                // line 15
 ($context["profile"] ?? $this->getContext($context, "profile")), "token", array()), "name" =>                 // line 16
@@ -77,11 +77,11 @@ $context["name"], "profiler_markup_version" =>                 // line 17
 ($context["profiler_markup_version"] ?? $this->getContext($context, "profiler_markup_version")), "csp_script_nonce" =>                 // line 18
 ($context["csp_script_nonce"] ?? $this->getContext($context, "csp_script_nonce")), "csp_style_nonce" =>                 // line 19
 ($context["csp_style_nonce"] ?? $this->getContext($context, "csp_style_nonce")));
-                if (!is_array($__internal_4f38534000ef0359f8ab7caf55a5f24614f038e085a212557e3fe9c87bd28186)) {
+                if (!is_array($__internal_c0947db7eeca557216a347b9625567be324f369431d2d47037b3f8c2d806047d)) {
                     throw new Twig_Error_Runtime('Variables passed to the "with" tag must be a hash.');
                 }
                 $context['_parent'] = $context;
-                $context = array_merge($context, $__internal_4f38534000ef0359f8ab7caf55a5f24614f038e085a212557e3fe9c87bd28186);
+                $context = array_merge($context, $__internal_c0947db7eeca557216a347b9625567be324f369431d2d47037b3f8c2d806047d);
                 // line 21
                 echo "                ";
                 $this->loadTemplate($context["template"], "@WebProfiler/Profiler/toolbar.html.twig", 21)->displayBlock("toolbar", $context);
@@ -120,10 +120,10 @@ $context["name"], "profiler_markup_version" =>                 // line 17
 <!-- END of Symfony Web Debug Toolbar -->
 ";
         
-        $__internal_79bfce8bf705457353e03c16fd4d2d8da764f98f75b4ac183d966a7b8ae90118->leave($__internal_79bfce8bf705457353e03c16fd4d2d8da764f98f75b4ac183d966a7b8ae90118_prof);
+        $__internal_d0291d067bdf68fe2ed40913512059fd34fcae45112b546248be7602e01fdd26->leave($__internal_d0291d067bdf68fe2ed40913512059fd34fcae45112b546248be7602e01fdd26_prof);
 
         
-        $__internal_212d0e1b576068d33a71c1c7a0b11cb730576caa2ba9923741fb5b8a694b85ba->leave($__internal_212d0e1b576068d33a71c1c7a0b11cb730576caa2ba9923741fb5b8a694b85ba_prof);
+        $__internal_5012f76c86499facc4e9e45dfec95873f116f324e66f92e0f096735b5ef343d8->leave($__internal_5012f76c86499facc4e9e45dfec95873f116f324e66f92e0f096735b5ef343d8_prof);
 
     }
 

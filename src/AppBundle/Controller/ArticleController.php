@@ -45,6 +45,66 @@ class ArticleController extends Controller
             ));
     }
 
+     /**
+     * Lists all article entities.
+     *
+     * @Route("/draft", name="article_draft")
+     * @Method("GET")
+     */
+    public function draftAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $dql   = "SELECT a FROM AppBundle:Article a WHERE a.isDraft = 1";
+        $query = $em->createQuery($dql);
+
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            5/*limit per page*/
+            );
+
+
+
+        $articles = $em->getRepository('AppBundle:Article')->findAll();
+        return $this->render('article/index.html.twig', array(
+            'articles' => $articles,
+            'pagination' => $pagination,
+            ));
+    }
+
+     /**
+     * Lists all article entities.
+     *
+     * @Route("/published", name="article_published")
+     * @Method("GET")
+     */
+    public function publishedAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $dql   = "SELECT a FROM AppBundle:Article a WHERE a.isDraft = 0";
+        $query = $em->createQuery($dql);
+
+        $paginator  = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            5/*limit per page*/
+            );
+
+
+
+        $articles = $em->getRepository('AppBundle:Article')->findAll();
+        return $this->render('article/index.html.twig', array(
+            'articles' => $articles,
+            'pagination' => $pagination,
+            ));
+    }
+
+
+
     /**
      * Creates a new article entity.
      *

@@ -1,6 +1,6 @@
 <?php
 
-/* @FOSUser/Security/login_content.html.twig */
+/* FOSUserBundle:Security:login_content.html.twig */
 class __TwigTemplate_59c1a33a0bb568edee679ad893d05245c536da7367549297b57965e900a84f01 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_59c1a33a0bb568edee679ad893d05245c536da7367549297b57965e900a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_db2e1ce89204e634fd6fa619868b5257174bc5a70afbf3b7132a29a67fb57bb2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_db2e1ce89204e634fd6fa619868b5257174bc5a70afbf3b7132a29a67fb57bb2->enter($__internal_db2e1ce89204e634fd6fa619868b5257174bc5a70afbf3b7132a29a67fb57bb2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@FOSUser/Security/login_content.html.twig"));
+        $__internal_6c2b4e80ff061a574739e05401cd885951bf02394c0580a45719ede643e839b5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6c2b4e80ff061a574739e05401cd885951bf02394c0580a45719ede643e839b5->enter($__internal_6c2b4e80ff061a574739e05401cd885951bf02394c0580a45719ede643e839b5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login_content.html.twig"));
 
-        $__internal_c18b1715345bd5e4a2c07deb91cb7a0c8eb6b7238d976f16d64050b8ac53b87a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c18b1715345bd5e4a2c07deb91cb7a0c8eb6b7238d976f16d64050b8ac53b87a->enter($__internal_c18b1715345bd5e4a2c07deb91cb7a0c8eb6b7238d976f16d64050b8ac53b87a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@FOSUser/Security/login_content.html.twig"));
+        $__internal_4dd9c401944f92841441fe6d76eafd9fe4dbfb6bb2ea5152b4c3b5b59c0e097a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4dd9c401944f92841441fe6d76eafd9fe4dbfb6bb2ea5152b4c3b5b59c0e097a->enter($__internal_4dd9c401944f92841441fe6d76eafd9fe4dbfb6bb2ea5152b4c3b5b59c0e097a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login_content.html.twig"));
 
         // line 2
         echo "
@@ -87,16 +87,16 @@ class __TwigTemplate_59c1a33a0bb568edee679ad893d05245c536da7367549297b57965e900a
     </form>
 ";
         
-        $__internal_db2e1ce89204e634fd6fa619868b5257174bc5a70afbf3b7132a29a67fb57bb2->leave($__internal_db2e1ce89204e634fd6fa619868b5257174bc5a70afbf3b7132a29a67fb57bb2_prof);
+        $__internal_6c2b4e80ff061a574739e05401cd885951bf02394c0580a45719ede643e839b5->leave($__internal_6c2b4e80ff061a574739e05401cd885951bf02394c0580a45719ede643e839b5_prof);
 
         
-        $__internal_c18b1715345bd5e4a2c07deb91cb7a0c8eb6b7238d976f16d64050b8ac53b87a->leave($__internal_c18b1715345bd5e4a2c07deb91cb7a0c8eb6b7238d976f16d64050b8ac53b87a_prof);
+        $__internal_4dd9c401944f92841441fe6d76eafd9fe4dbfb6bb2ea5152b4c3b5b59c0e097a->leave($__internal_4dd9c401944f92841441fe6d76eafd9fe4dbfb6bb2ea5152b4c3b5b59c0e097a_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@FOSUser/Security/login_content.html.twig";
+        return "FOSUserBundle:Security:login_content.html.twig";
     }
 
     public function isTraitable()
@@ -151,6 +151,6 @@ class __TwigTemplate_59c1a33a0bb568edee679ad893d05245c536da7367549297b57965e900a
         <br>
         <input id=\"submit-login\" class=\"btn btn-primary form-control center-block\" type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"{{ 'security.login.submit'|trans }}\" />
     </form>
-", "@FOSUser/Security/login_content.html.twig", "/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig");
+", "FOSUserBundle:Security:login_content.html.twig", "/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig");
     }
 }
