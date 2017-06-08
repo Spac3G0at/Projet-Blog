@@ -4,10 +4,10 @@
 
 	{% if article.isDraft != 1 %}
 
-	<div class="row {% if article.image != NULL %} haveImage {% endif %}">
+	<div class="row">
 	<h1 class="text-center">{{ article.title }}</h1>
 	{% if article.image != NULL %}
-	<img src="{{ asset('uploads/articles/') }}{{ article.image }}">
+	<img width="100%;" class="center-block" src="{{ asset('uploads/articles/') }}{{ article.image }}">
 	{% endif %}
 
 	</div>

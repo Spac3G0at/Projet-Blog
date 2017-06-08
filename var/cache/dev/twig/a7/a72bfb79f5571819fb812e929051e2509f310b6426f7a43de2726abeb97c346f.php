@@ -1,6 +1,6 @@
 <?php
 
-/* @FOSUser/ChangePassword/change_password_content.html.twig */
+/* FOSUserBundle:ChangePassword:change_password_content.html.twig */
 class __TwigTemplate_474fa0802605a740a4b54a29fc06d89c512b7f808d5bed27510a2b0b23c2d8a4 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_474fa0802605a740a4b54a29fc06d89c512b7f808d5bed27510a2b0b23c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6ae902b7856ca9ed7227cd3c556f3197f4d3b54a708f5bdaf22ee37221cf1b2e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6ae902b7856ca9ed7227cd3c556f3197f4d3b54a708f5bdaf22ee37221cf1b2e->enter($__internal_6ae902b7856ca9ed7227cd3c556f3197f4d3b54a708f5bdaf22ee37221cf1b2e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@FOSUser/ChangePassword/change_password_content.html.twig"));
+        $__internal_28cbb9fbd2eaea9fed401115504eaa80b93b3b7a4174602393ce2c872a4cb2e4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_28cbb9fbd2eaea9fed401115504eaa80b93b3b7a4174602393ce2c872a4cb2e4->enter($__internal_28cbb9fbd2eaea9fed401115504eaa80b93b3b7a4174602393ce2c872a4cb2e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:ChangePassword:change_password_content.html.twig"));
 
-        $__internal_1dc6826c5e5c0b163d495c84de1c3d9ac151bc06f249e4913db6086940765d49 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1dc6826c5e5c0b163d495c84de1c3d9ac151bc06f249e4913db6086940765d49->enter($__internal_1dc6826c5e5c0b163d495c84de1c3d9ac151bc06f249e4913db6086940765d49_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@FOSUser/ChangePassword/change_password_content.html.twig"));
+        $__internal_9149970c024a78588aa281d41b253a1432487bbd5234f8adc3680f43fb73db73 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9149970c024a78588aa281d41b253a1432487bbd5234f8adc3680f43fb73db73->enter($__internal_9149970c024a78588aa281d41b253a1432487bbd5234f8adc3680f43fb73db73_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:ChangePassword:change_password_content.html.twig"));
 
         // line 2
         echo "
@@ -49,16 +49,16 @@ class __TwigTemplate_474fa0802605a740a4b54a29fc06d89c512b7f808d5bed27510a2b0b23c
         echo "
 ";
         
-        $__internal_6ae902b7856ca9ed7227cd3c556f3197f4d3b54a708f5bdaf22ee37221cf1b2e->leave($__internal_6ae902b7856ca9ed7227cd3c556f3197f4d3b54a708f5bdaf22ee37221cf1b2e_prof);
+        $__internal_28cbb9fbd2eaea9fed401115504eaa80b93b3b7a4174602393ce2c872a4cb2e4->leave($__internal_28cbb9fbd2eaea9fed401115504eaa80b93b3b7a4174602393ce2c872a4cb2e4_prof);
 
         
-        $__internal_1dc6826c5e5c0b163d495c84de1c3d9ac151bc06f249e4913db6086940765d49->leave($__internal_1dc6826c5e5c0b163d495c84de1c3d9ac151bc06f249e4913db6086940765d49_prof);
+        $__internal_9149970c024a78588aa281d41b253a1432487bbd5234f8adc3680f43fb73db73->leave($__internal_9149970c024a78588aa281d41b253a1432487bbd5234f8adc3680f43fb73db73_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@FOSUser/ChangePassword/change_password_content.html.twig";
+        return "FOSUserBundle:ChangePassword:change_password_content.html.twig";
     }
 
     public function isTraitable()
@@ -90,6 +90,6 @@ class __TwigTemplate_474fa0802605a740a4b54a29fc06d89c512b7f808d5bed27510a2b0b23c
         <a href=\"{{ path(\"fos_user_profile_edit\") }}\">{{ 'profile.edit.editProfile'|trans }}</a>
     </div>
 {{ form_end(form) }}
-", "@FOSUser/ChangePassword/change_password_content.html.twig", "/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/views/ChangePassword/change_password_content.html.twig");
+", "FOSUserBundle:ChangePassword:change_password_content.html.twig", "/home/spac3g0at/Documents/Simplon/Projet Fin Formation/Blog/vendor/friendsofsymfony/user-bundle/Resources/views/ChangePassword/change_password_content.html.twig");
     }
 }
