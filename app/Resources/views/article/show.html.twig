@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div class="row {% if article.image != NULL %} haveImage {% endif %}">
+<div class="row">
     <h1 class="text-center">{{ article.title }}</h1>
     {% if article.image != NULL %}
-    <img src="{{ asset('uploads/articles/') }}{{ article.image }}">
+    <img width="100%;" class="center-block" src="{{ asset('uploads/articles/') }}{{ article.image }}">
     {% endif %}
 
     </div>
@@ -13,6 +13,7 @@
 
     <div class="row container">
         <h4 class="text-center">{# Author,  #}<span class="glyphicon glyphicon-time">{{ article.createdAt | date('Y-m-d') }}, {{ article.createdAt | date('H:i:s') }}</h4>
+
     </div>
 
     <hr>

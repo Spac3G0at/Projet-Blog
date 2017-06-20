@@ -2,7 +2,7 @@
 
 {% block body %}
 
-	{% if article.isDraft != 1 %}
+	{% if article.isDraft == 0 %}
 
 	<div class="row">
 	<h1 class="text-center">{{ article.title }}</h1>

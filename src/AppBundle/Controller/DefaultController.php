@@ -111,7 +111,7 @@ class DefaultController extends Controller
             */
             public function contactAction(Request $request)
             {
-               // replace this example code with whatever you need
+
                return $this->render('default/contact.html.twig');
             }         
 
